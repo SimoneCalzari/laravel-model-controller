@@ -1,2 +1,10 @@
 // importo BOOSTRAP
 @import "~bootstrap/scss/bootstrap";
+
+.img-box {
+    height: 35vw;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
