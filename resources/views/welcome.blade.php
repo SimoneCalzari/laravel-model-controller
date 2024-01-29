@@ -2,19 +2,19 @@
 @section('title')
     {{ 'Laravel Movies' }}
 @endsection
-
 @section('main')
     <!-- MAIN -->
     <main>
         <div class="container py-5">
             <div class="row gy-4">
-                @foreach ($movies as $key => $movie)
+                @foreach ($movies as $movie)
                     <div class="col-4">
                         <!-- CARD -->
                         <div class="card">
                             <ul class="list-group">
                                 <div class="img-box">
-                                    <img src="{{ Vite::asset("resources/img/$imgs[$key]") }}" alt="{{ $movie['title'] }}">
+                                    <img src="{{ Vite::asset('resources/img/' . $imgs[$loop->index]) }}"
+                                        alt="{{ $movie['title'] }}">
                                 </div>
 
                                 <li class="list-group-item text-bg-primary">
