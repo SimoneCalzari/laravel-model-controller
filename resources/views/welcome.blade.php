@@ -13,7 +13,7 @@
                         <div class="card">
                             <ul class="list-group">
                                 <div class="img-box">
-                                    <img src="{{ Vite::asset('resources/img/' . $imgs[$loop->index]) }}"
+                                    <img src="{{ Vite::asset("resources/img/{$imgs[$loop->index]}") }}"
                                         alt="{{ $movie['title'] }}">
                                 </div>
 
